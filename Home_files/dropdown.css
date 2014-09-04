@@ -1,0 +1,212 @@
+.searchmenuitem:hover { background-color:#f8f8d2; }
+.searchmenuitem { border-bottom:solid 1px #ccc; }
+.searchmenuitem:last-child { border:0; }
+.edelivery{
+	font-family:Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	clear:both;
+	float:none;
+	font-size:12px;
+	color:#003366;
+	}
+div.edelivery div {
+	margin-top:4px;
+	margin-left:10px;
+}
+div.edelivery-wr {
+	padding:5px 8px;
+	font-size:12px;
+	line-height:150%;
+}
+span.lbl{
+	font-weight:bold;
+	color:#003366;
+}
+#id-searchbtngo {
+cursor:pointer;
+width:28px;
+height:22px;
+border:0;
+background:url(/images/en-us/btn_go.gif) no-repeat -301px -245px;
+float:left;
+}
+
+#id-searchcategory {
+float:left;
+height:20px;
+vertical-align:middle;
+cursor:pointer;
+width:88px;
+font:11px Arial, Helvetica, sans-serif;
+background:url(/images/en-us/btn_go.gif) no-repeat -210px -245px;
+color:#666;
+clear:none;border:0;
+padding:5px 0 0 3px;
+}
+
+#id-symlookup-wr {
+background:url(/images/en-us/btn_go.gif) no-repeat -97px -245px;
+color:#666;
+width:113px;
+height:22px;
+font:11px Arial, Helvetica, sans-serif;
+padding:1px 2px;
+float:left;
+vertical-align:middle;
+}
+
+.row_hightlight {
+	background-color:#FDFCE7;
+}
+.select-free {
+    /* No more necessary? This needs to be checked!!! will have to test ;-) */
+    /*overflow:hidden;/*must have*/
+}
+.select-free .innerFixer {
+    position:absolute;/*must have*/
+    top:0;/*must have*/
+    left:0;/*must have*/
+    display:none;/*sorry for IE5*/
+    display/**/:block;/*sorry for IE5*/
+    width:100%;/* (old value 3000px) must have for any big value*/
+    height:100%;/* (old value 3000px) must have for any big value*/
+}
+.select-free iframe.innerFixer {
+    border: 0;
+    filter:mask();/*must have*/
+    z-index:-1;/*must have*/
+}
+a.brefresh {
+	display:block;
+	float:left;
+	height:15px;
+	overflow:hidden;
+	width:10px;
+	background:url("/images/en-us/refresh.gif") no-repeat scroll left top transparent;
+	text-indent:-9999px;
+	text-decoration:none;
+	padding:0 0 0 23px;
+	margin: 12px 0 0 15px;
+}
+a.but_refresh {
+background: url(/images/shared/icon-refresh2.png) no-repeat scroll 0 5px transparent;
+width:55px;
+height:20px;
+display:block;
+float:left;
+font-size:11px;
+text-indent:15px;
+margin: 8px 0px 8px 0px;
+}
+a.but_refreshing {
+background: url(/images/shared/icon_refresh2_progress.gif) no-repeat scroll 0 5px transparent;
+width:65px;
+height:20px;
+display:block;
+float:left;
+margin-left:10px;
+margin-top:11px;
+}
+li.vpipe {
+background:url("/images/en-us/line.gif") no-repeat scroll 0 -260px transparent;
+float:left;
+height:26px;
+margin:0 0 0 10px;
+padding:0 10px 0 0;
+}
+a.hplink {
+   background: url("/images/en-us/help.gif") no-repeat scroll 0 5px transparent;
+    display: block;
+    float: left;
+    font-size: 11px;
+    height: 19px;
+    margin: 8px 0px 8px 0px;
+    text-indent: 14px;
+    vertical-align: middle;
+    width: 70px;
+
+}
+div.title>h1 {
+	margin-right: 10px;
+}
+div.title>div.sub_title {
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.stocks .stocks_list .list ul li a.lnk_fs {
+font-size:11px;
+padding-bottom:3px;
+padding-top:2px;
+width:79px;
+_width:74px;
+background:url(/images/en-us/arrow_down2.gif) no-repeat scroll 65px 6px transparent;
+_background:url(/images/en-us/arrow_down2.gif) no-repeat scroll 63px 8px transparent;
+display:block;
+}
+div.ss1 {
+display:none;
+width:240px;
+height:65px;
+padding: 0;
+background:url(/images/shared/bg_popup.gif) no-repeat;
+font-size:12px;
+position:absolute;
+z-index:9999;
+}
+div.ss1 input.stext {
+float:left;width:120px;text-transform:uppercase;
+}
+div.ss1 a.usesymbol {
+background:url(/images/en-us/btn_symbol.gif) no-repeat scroll 0 0 transparent;
+width:87px;
+height:25px;
+display:block;
+float:left;
+margin-left:10px;
+}
+div.ss1 div.lbl {
+color:#666;
+line-height:150%;
+float:left;
+width:200px;
+padding-bottom:5px;
+margin-top:-9px;
+_margin-top:-17px;
+margin-left:10px;
+_margin-left:5px;
+}
+div.ss1 div.cr {
+margin-top:0;
+margin-left:225px;
+width:15px;
+height:15px;
+cursor:pointer;
+}
+/* locale msg center */
+.mn_head .del, .mn_head .mr {
+display:block;
+float:left;
+background:url(/images/en-us/mc/msgcenter.gif) no-repeat scroll left 2px transparent;
+text-indent:-9999px;
+width:62px;
+height:22px;
+}
+.mn_head .mr {
+background-position:0 -125px;
+width:64px;
+margin-left:5px;
+}
+.mn_head .disabled, .mn_head .disabled_mr {
+display:block;
+float:left;
+background:url(/images/en-us/mc/msgcenter.gif) no-repeat scroll 0 -26px transparent;
+width:62px;
+text-indent:-9999px;
+height:22px;
+}
+.mn_head .disabled_mr {
+background-position:0 -152px;
+width:64px;
+margin-left:5px;
+}
+/* locale msg center ends*/

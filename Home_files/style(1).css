@@ -1,0 +1,102 @@
+.qs-sectorsindus .qs-ui-ipt{border-color:#888 #ececec #f5f5f5 #ececec;}
+
+.qs-sectorsindus .qs-ui-btn{color:#06c;font-weight:bold;border:1px solid #d7d7d7;height:14px;margin:0;
+-webkit-border-radius:3px;
+border-radius:3px;
+background-clip:padding-box;
+background-color:#fff;
+background-image:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d7d7d7));
+background-image:-webkit-linear-gradient(top, #ffffff, #d7d7d7);
+background-image:-moz-linear-gradient(top, #ffffff, #d7d7d7);
+background-image:-o-linear-gradient(top, #ffffff, #d7d7d7);
+background-image:linear-gradient(to bottom, #ffffff, #d7d7d7);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff',EndColorStr='#d7d7d7');*zoom:1;
+}
+.qs-sectorsindus .qs-ui-btn:hover{
+background-color:#d7d7d7;
+}
+
+/*.qs-sectorsindus .qs-ui-pagination-v2 .tools .page-select{border:1px solid #d7d7d7;height:14px;padding:2px;
+-webkit-border-radius:3px;
+border-radius:3px;
+background-clip:padding-box;
+}
+.qs-sectorsindus .qs-ui-pagination-v2 .tools .page-select .pageno{border:0 none;}
+.qs-sectorsindus .qs-ui-pagination-v2 .select-btn{background:url(bg_ftrd_icon.png) 100% -17px no-repeat;}
+.qs-news .qs-news-hd .text-resize a{width:auto;font-weight:normal;padding:3px 4px;font-size:10px;line-height:1;background:#f0f0f0;}
+.qs-news .qs-news-hd .text-resize a.on{font-weight:bold;}
+
+.qs-news .font-1{font-size:10px;}
+.qs-news .font0{font-size:11px;}
+.qs-news .font1{font-size:12px;}
+
+body .qs-calendar{z-index:2;}*/
+
+.qs-calendar{border-color:#ccc;background:#fff;color:#333;}
+.qs-calendar .rtq_table_wrap .qs-calendars-heightLight:hover{ background-color:#E8E8FF}
+.qs-calendar .qs-calendar-tbar{border-color:#ccc;}
+.qs-calendar .qs-calendar-tbar .tool .navBtn:hover{border-color:#727272;background-color:#ccc;}
+.qs-calendar .qs-calendar-tbar .tool .navBtn div{background-image:url(//rtqimg.morningstar.com/theme/default/bg_calendar.png);}
+.qs-calendar .qs-calendar-tbar .dayNames div{color:#666;}
+.qs-calendar .qs-calendar-tbar .dayNames .weekend,
+.qs-calendar .qs-calendar-body table .weekend{color:#ff4d4d;}
+.qs-calendar .qs-calendar-body{background:#f0f0f0;border:none;}
+.qs-calendar .qs-calendar-body table .otherMonth,
+.qs-calendar .qs-calendar-body table .otherMonthweekend,.qs-calendar .disable{color:#888;}
+.qs-calendar .qs-calendar-body table div:hover{background-color:#ccc;border-color:#c8c8c8;color:#000;}
+.qs-calendar .qs-calendar-body table .selectday{color:#000;background-color:#ccc;border-color:#727272;}
+.qs-calendar .qs-calendar-body table .today{color:#fff;background:#3c3c3c;}
+.qs-calendar .qs-calendar-fbar{border-color:#ccc;}
+
+/*
+.qs-gd-light .qs-api-headbar input{vertical-align:baseline;}
+.qs-gd-light .qs-api-headbar .qs-dateField .label{margin:0 5px;}
+.qs-gd-light .qs-api-headbar .index-news-checkbox{margin:0 8px 0 10px;}
+
+.qs-news-toolbar .page{margin-right:10px;}*/
+div.qs-ui-pagination input.qs-ui-ipt{width:50px;}
+
+.qs-marketsectors-wap .qs-triangle-container{float:left;}
+.qs-marketsectors-wap .qs-marketsectors-grid{float:left;*float:none;}
+.qs-marketsectors-grid{margin-top:10px;min-width:180px;}
+.qs-marketsectors-grid h3{padding:5px;}
+.qs-marketsectors-grid .dtgrid .rtq-grid{font-size:10px;}
+
+.qs-marketbarometerwrap .style-main{position:relative;}
+.qs_marketbarometer .main .box{width:auto;}
+.qs_marketbarometer .main .clorbox{float:left;}
+.qs_marketbarometer .center-gap{display:none;}
+.qs_marketbarometer .sub{bottom:0;position:absolute;right:0;left:130px;}
+.qs_msstylebox{margin-bottom:0;cursor:default !important;}
+.tool-section .note,
+.tool-section .type,
+.table-section .date,
+.qs-sectorsindus .table-section .foot .rating-comment{color:#9d9d9d;}
+.qs-sectorsindus .title-section{color:#013369;}
+.head-section .title .info{color:#013369;font-weight:bold;}
+.head-section .title .date{color:#a1a1a1;font-size:10px;}
+.table-section{padding-top:10px;}
+.table-section .info{color:#013369;font-weight:bold;}
+.qs-sectorsindus .table-section .rtq-grid .rtq-grid-bd .level-0{background:#f9f9f9;}
+.qs-sectorsindus .table-section .sectors-list .rtq-grid .rtq-grid-bd .level-1 .column-name{background:url(bg_ftrd_icon.png) 2px 5px no-repeat;color:#0052c6;}
+.qs-sectorsindus .table-section .sectors-list .rtq-grid .rtq-grid-bd .level-3 .column-name{color:#013369;}
+.qs-sectorsindus .table-section .rtq-grid .rtq-grid-bd .rtq-grid-row:hover{background-color:#fff6d4;}
+.qs-sectorsindus .table-section .rtq-grid .rtq-grid-bd div.rtq-grid-row-selected{background-color:#fff;}
+.qs-sectorsindus .table-section .rtq-grid .rtq-grid-bd .rtq-grid-row.rtq-grid-row-checked{background:#f9f9f9;}
+.qs-sectorsindus .table-section .rtq-grid .rtq-grid-cell-sa,
+.qs-sectorsindus .table-section .rtq-grid .rtq-grid-cell-sd{color:#0052c6;}
+.qs-sectorsindus .footer .info{padding:10px 0;border-bottom:1px solid #d7d7d7;}
+
+.qs-ui-pagination-v2{padding:10px 0;}
+
+.qs-quicktake .rtq-qt-sm{border:0 none !important;}
+.rtq-tabs .rtq-tab-panels{border:0 none !important;}
+
+.rtq-calendar .rtq_dk_Row,.rtq-calendar .rtq_lt_Row{height:auto;}
+
+.wrap-text-close{cursor:default;}
+
+.qs-marketsectors-grid .rtq-grid-auto div.rtq-grid-cell .rtq-grid-cell-ctn{white-space:nowrap;}
+
+.qs-news .rtq-grid .rtq-grid-bd {color: #333;}
+.qs-news .qs-news-content{color: #666;}

@@ -1,0 +1,127 @@
+
+<!-- saved from url=(0069)file:///C:/Users/yaks/Downloads/stocks/Positions_files/ajax_frame.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Lightstreamer AJAX Page</title>
+<script  language="JavaScript">
+  function LS_extractParam(name) {
+    var pattern = new RegExp("[?&]" + name + "=[^&]*");
+    var result = pattern.exec(location.search);
+    if (result && result[0]) {
+      var prefLen = name.length + 2;
+      if (window.decodeURIComponent) {
+        return decodeURIComponent(result[0].substring(prefLen));
+      } else {
+        return unescape(result[0].substring(prefLen));
+      }
+    } else {
+      return null;
+    }
+  }
+  
+  var phase = LS_extractParam("phase");
+  if (phase == null) {
+    if (location.search.length > 1) {
+      domain = location.search.substring(1);
+      document.domain = domain;
+    }
+  } else {
+    var domain = LS_extractParam("domain");
+    if (domain != null) {
+      document.domain = domain;
+    }
+  }
+  
+  function getXMLHttp() {
+    var xmlhttp = null;
+    if (window.ActiveXObject) {
+      if (navigator.userAgent.toLowerCase().indexOf("msie 5") != -1) {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      } else {
+        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    }
+    if (!xmlhttp && typeof(XMLHttpRequest) != 'undefined') {
+        xmlhttp = new XMLHttpRequest();
+    }
+    return xmlhttp;
+  }  
+  
+  function sendRequest(_url, data, requestObject) {
+    requestObject.sender = getXMLHttp();
+    if (!requestObject.sender) {
+      return false;
+    } 
+  
+    if (window.opera && parent.LS_x) {
+      setTimeout(function() {
+        sendRequestExecution(_url, data, requestObject);
+      },1);
+    } else {
+      sendRequestExecution(_url, data, requestObject);
+    }
+  
+    return true;
+  }
+  
+  function callError(e,requestObject) {
+   if (requestObject.LS_x) {
+     requestObject.LS_x(e);
+   } else if (parent && parent.LS_x) {
+     parent.LS_x(e, requestObject);
+   }
+  }
+  
+  function sendRequestExecution(_url, data, requestObject) {
+    try {
+      requestObject.sender.open("POST", _url, true);
+      requestObject.sender.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+      if (requestObject.LS_h) {
+        requestObject.sender.onreadystatechange = requestObject.LS_h;
+      } else {
+        requestObject.sender.onreadystatechange = function(){
+          if (parent && parent.LS_h) {
+            parent.LS_h(requestObject);
+          }
+        };
+      }
+      requestObject.sender.send(data);
+    } catch(e) {
+      callError(e,requestObject);
+    }
+  }
+  
+  var onLoadOk = false;
+  
+  function ajaxFrameOnLoad() {
+    onLoadOk = true;
+    try {
+      if (!parent.LS_a) {
+        // old version
+        parent.LS_a = parent.a;
+        parent.LS_h = parent.h;
+      }
+      
+      parent.LS_a(phase);
+    } catch(e) {
+    }
+  }
+  
+  function checkOnLoad() {
+    if (onLoadOk == false) {
+      ajaxFrameOnLoad();
+    }
+  }
+
+</script>
+</head>
+<body   marginwidth="0"  marginheight="0">
+<script>
+  if (window.opera) { 
+    setTimeout(checkOnLoad,1000);
+  }
+</script>
+
+
+
+ </body></html>
