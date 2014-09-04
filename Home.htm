@@ -327,7 +327,7 @@ function displayStrikeMonth(xml, section) {
 				<li id="customer_link"><a href="https://invest.firstrade.com/content/customerservice/contactus/" data-hc="/content/customerservice/contactus/">Customer Service</a></li>
 			</ul>
 			<ul id="home_menu" class="nav_two current">
-				<li class="left" style="margin-top:2px"><img id="homeprogressicon" src="./Home_files/progress80.gif" style="vertical-align: middle; display: none;"><span style="font-size:11px">&nbsp;&nbsp;&nbsp;&nbsp;Welcome, LONG.  You last logged in on 06/18/2014 09:01:20 ET. </span></li>
+				<li class="left" style="margin-top:2px"><img id="homeprogressicon" src="./Home_files/progress80.gif" style="vertical-align: middle; display: none;"><span style="font-size:11px">&nbsp;&nbsp;&nbsp;&nbsp;Welcome, LONG. </span></li>
 			</ul>
 			<ul id="myaccount_menu" class="nav_two">
 				<li class="left"><a href="https://invest.firstrade.com/cgi-bin/acctbalance" class="default"><span>Balances</span></a></li>
@@ -463,13 +463,13 @@ function displayStrikeMonth(xml, section) {
 						<h5>Account Balances</h5>
 						<a href="javascript:void(0)"></a>
 					</div>
-					<div class="content"><table cellspacing="0" cellpadding="0"><tbody><tr><th width="120">Total Account Value</th><th width="5" class="orange">&nbsp;</th><th class="ta_right">$29,002.32<br><span class="ta_right" style="float:right">Current</span></th><th width="5" class="orange">&nbsp;</th><th width="130" class="green ta_right">+$243.05 (+0.85%)<br><span class="ta_right" style="float:right">Change</span></th></tr><tr class="last"><td class="ta_left" colspan="3">Margin Buying Power</td><td></td><td class="ta_right">$212.90</td></tr><tr class="last"><td class="ta_left" colspan="3">Non-Margin Buying Power</td><td></td><td class="ta_right">$106.45</td></tr><tr class="last"><td class="ta_left" colspan="3" style="border-top: 1px solid #DDDCDC;">Money Locked by Pending Orders</td><td style="border-top: 1px solid #DDDCDC;"></td><td class="ta_right" style="border-top: 1px solid #DDDCDC;">$0.00</td></tr></tbody></table><a class="more stdlink" href="https://invest.firstrade.com/cgi-bin/acctbalance">View More</a></div>
+					<div class="content"><table cellspacing="0" cellpadding="0"><tbody><tr><th width="120">Total Account Value</th><th width="5" class="orange">&nbsp;</th><th class="ta_right">$48,098.63<br><span class="ta_right" style="float:right">Current</span></th><th width="5" class="orange">&nbsp;</th><th width="130" class="green ta_right" style="color:red">-$710.06 (-1.45%)<br><span class="ta_right" style="float:right">Change</span></th></tr><tr class="last"><td class="ta_left" colspan="3">Margin Buying Power</td><td></td><td class="ta_right">$212.90</td></tr><tr class="last"><td class="ta_left" colspan="3">Non-Margin Buying Power</td><td></td><td class="ta_right">$106.45</td></tr><tr class="last"><td class="ta_left" colspan="3" style="border-top: 1px solid #DDDCDC;">Money Locked by Pending Orders</td><td style="border-top: 1px solid #DDDCDC;"></td><td class="ta_right" style="border-top: 1px solid #DDDCDC;">$0.00</td></tr></tbody></table><a class="more stdlink" href="https://invest.firstrade.com/cgi-bin/acctbalance">View More</a></div>
 				</div><div class="box_hd" id="totalValueChart">
-					<div class="header_r8">
+					<div class="header_r8" style="display:none;">
 						<h5>Total Value Chart</h5>
 						<a href="javascript:void(0)"></a>
 					</div>
-					<div class="content">
+					<div class="content" style="display:none;">
 						<div class="nav nav_s">
 							<div class="left">
 								<ul>
@@ -609,7 +609,7 @@ function displayStrikeMonth(xml, section) {
 							<span class="quotetime">Quotes are delayed at least 15 minutes</span>
 						</div>
 					</div>
-				</div><div class="box_hd" id="news">
+				</div><div class="box_hd" id="news" style="display:none;">
 					<div class="header_r8">
 						<h5>News</h5>
 						<a href="javascript:void(0)"></a>
@@ -817,7 +817,7 @@ myTable.onItemUpdate = function (itemPos, updateInfo, itemName) {
 };
 pushPage.addTable(myTable,"1");
 </script>
-<div id="mainorderbar" style="height: 54px;"><script>
+<div id="mainorderbar" style="height: 54px; display:none;"><script>
 	var bEnableOrderbarSubmit=true;
 	var bEnableOrderbarSubmit_option=true;
 	var isShowingOptionChain = false;
